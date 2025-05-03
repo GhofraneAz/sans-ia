@@ -1,18 +1,17 @@
-# Voir https://help.github.com/ignore-files/ pour plus d'infos
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# === Build output ===
-dist/
-tmp/
-out-tsc/
-bazel-out/
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
-# === Node ===
-node_modules/
-npm-debug.log*
-yarn-error.log*
-package-lock.json
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
 
-# === IDEs ===
+# IDEs and editors
 .idea/
 .project
 .classpath
@@ -21,31 +20,23 @@ package-lock.json
 .settings/
 *.sublime-workspace
 
-# === VS Code ===
-.vscode/
+# Visual Studio Code
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history/*
 
-# Historique de fichiers (ex. plugin)
-.history/
-
-# === Angular ===
-.angular/cache/
-.angular/config.json
-
-# === Coverage / Test ===
-coverage/
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
 testem.log
-libpeerconnection.log
+/typings
 
-# === Typings (ancienne gestion TS) ===
-typings/
-
-# === Autres fichiers système ===
+# System files
 .DS_Store
 Thumbs.db
-
-# === Verrouillage ===
-connect.lock
